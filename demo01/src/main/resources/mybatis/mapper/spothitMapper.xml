@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.demo01.Mapper.spothitMapper">
+    <select id="getSpothit" resultType="String">
+        select spotname from traveldb.t_spothit order by hit desc limit 5;
+    </select>
+
+    <select id="getSpotHit" resultType="int">
+        select hit from traveldb.t_spothit where spotname = #{spotname};
+    </select>
+
+    <update id="updateSpotHit">
+        UPDATE traveldb.t_spothit SET hit = #{hit} where spotname = #{spotname};
+    </update>
+</mapper>

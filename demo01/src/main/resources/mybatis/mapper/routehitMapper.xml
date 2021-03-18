@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.demo01.Mapper.routehitMapper">
+    <select id="getRoutehit" resultType="routehit">
+        select * from traveldb.t_routehit order by rouhit desc limit 5;
+    </select>
+
+    <select id="getRouteHit" resultType="int">
+        select rouhit from traveldb.t_routehit where routeName = #{routeName};
+    </select>
+
+    <update id="updateRouteHit">
+        update traveldb.t_routehit set rouhit = #{rouhit} where routeName = #{routeName};
+    </update>
+</mapper>

@@ -1,0 +1,3 @@
+INSERT INTO `t_route` VALUES (1, '北京故宫', '颐和园', '北京园林之旅', 200, 2, '此条线路带领游客参观北京两大景点：故宫和颐和园。项目总时长2天。在皇家花园中散步，了解那段波澜壮阔的时光，感受皇家气派。', '/routePic/gg1.jpg', '/routePic/gg2.jpg', '/routePic/gg3.jpg', '/routePic/yhy1.jpg', '/routePic/yhy2.jpg', '/routePic/yhy3.jpg');
+INSERT INTO `t_route` VALUES (2, '南京玄武湖', '南京玄武湖', '南京玄武湖一日游', 70, 1, '玄武湖风景优美，在春日的和煦微风里来一场悠闲的玄武湖之旅吧！', '/routePic/xw1.jpg', '/routePic/xw2.jpg', '/routePic/xw3.jpg', '/routePic/xw1.jpg', '/routePic/xw2.jpg', '/routePic/xw3.jpg');
+INSERT INTO `t_route` VALUES (3, '杭州西湖', '杭州西湖', '杭州西湖一日游', 60, 1, '西湖风景优美，在春日的和煦微风里来一场悠闲的西湖之旅吧！', '/routePic/xh1.jpg', '/routePic/xh2.jpg', '/routePic/xh3.jpg', '/routePic/xh1.jpg', '/routePic/xh2.jpg', '/routePic/xh3.jpg');

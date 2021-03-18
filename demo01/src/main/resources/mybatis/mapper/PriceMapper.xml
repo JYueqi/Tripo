@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.demo01.Mapper.PriceMapper">
+    <select id="getSpotPricehot" resultType="Integer">
+        select pri_hotseason from traveldb.t_price where Spotname = #{Spotname};
+    </select>
+
+    <select id="getSpotPriceno" resultType="Integer">
+        select pri_nomalseason from traveldb.t_price where Spotname = #{Spotname};
+    </select>
+
+    <select id="getSpotPriceinfo" resultType="String">
+        select Type from traveldb.t_price where Spotname = #{Spotname};
+    </select>
+</mapper>
